@@ -38,6 +38,7 @@ public class GameTest {
             game.register(player2);
         });
     }
+
     @Test
     public void nullPlayer1() {
         Game game = new Game();
@@ -51,6 +52,7 @@ public class GameTest {
             game.round("Boris", "Serge");
         });
     }
+
     @Test
     public void nullPlayer2() {
         Game game = new Game();
@@ -64,6 +66,7 @@ public class GameTest {
             game.round("Serge", "Boris");
         });
     }
+
     @Test
     public void draw() {
         Game game = new Game();
@@ -75,6 +78,7 @@ public class GameTest {
 
         Assertions.assertEquals(0, game.round("Serge", "Katrin"));
     }
+
     @Test
     public void player1Win() {
         Game game = new Game();
@@ -86,6 +90,7 @@ public class GameTest {
 
         Assertions.assertEquals(1, game.round("Serge", "Alex"));
     }
+
     @Test
     public void player2Win() {
         Game game = new Game();
